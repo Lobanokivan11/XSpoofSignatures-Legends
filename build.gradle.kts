@@ -13,6 +13,7 @@ allprojects {
 		google()
 		mavenCentral()
 		maven(url = "https://jcenter.bintray.com/")
+        maven(url = "https://raw.githubusercontent.com/rovo89/XposedBridge/refs/heads/gh-pages/de/robv/android/xposed/api/")
 	}
 }
 
