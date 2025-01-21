@@ -132,6 +132,6 @@ public class Main implements IXposedHookLoadPackage {
 
 		final Class<?> hookClass = XposedHelpers.findClass(targetClass, lpparam.classLoader);
 		XposedBridge.hookAllMethods(hookClass, "generatePackageInfo", hook);
-		XposedBridge.log(("[XSpoofSignatures] Hooking to ", targetClass));
+		XposedBridge.log("[XSpoofSignatures] Hooking to " + targetClass);
 	}
 }
