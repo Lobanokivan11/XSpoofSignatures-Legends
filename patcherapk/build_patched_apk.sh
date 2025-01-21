@@ -19,12 +19,12 @@ function addUsesPermission ()
         echo Found ${ATTR_VALUE}. Skipping
     else
         echo Adding ${ATTR_VALUE}
-        TMP_FILE=`mktemp -q /tmp/$(basename ${MANIFEST_FILE}).tmp`
+        TMP_FILE="./SourceApk/AndroidManifest.xml.updating"
         xmlstarlet ed -S \
             -s /manifest -t elem -n uses-permission-temp -v "" \
             -i //uses-permission-temp -t attr -n android:name -v ${ATTR_VALUE} \
             -r //uses-permission-temp -v uses-permission ${MANIFEST_FILE} > ${TMP_FILE}
-        mv ${TMP_FILE} ${MANIFEST_FILE}
+        cp ${TMP_FILE} ${MANIFEST_FILE}
     fi
 }
 
@@ -32,20 +32,29 @@ addUsesPermission 'android.permission.FAKE_PACKAGE_SIGNATURE'
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
 CERTORIGINAL="$(java -jar ApkSig.jar original.apk)"
-xmlstarlet ed -i 'manifest/application' -t meta-data -n android:name="fake-signature" -v android:value="$CERTORIGINAL" AndroidManifest.xml
+xmlstarlet ed -S \
+    -s /manifest/application -t elem -n meta-data -v "" \
+    -i /manifest/application/meta-data -t attr -n android:name -v "fake-signature" \
+    -i /manifest/application/meta-data -t attr -n android:value -v "$CERTORIGINAL" \
+    -r /manifest/application/meta-data -v meta-data ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating2
+cp ./SourceApk/AndroidManifest.xml.updating2 ./SourceApk/AndroidManifest.xml
 
-echo "Applying Android 5.x patch ..."
-bspatch PSM/lib/armeabi/libdefault.so PSM/lib/armeabi/libdefault_real.so patches/android_5.bpatch
-
-echo "Copying NoPsmDrm libraries."
-cp -rv lib/* PSM/lib/armeabi/
+echo "Add Signature Using By System"
+xmlstarlet ed -S \
+    -s /manifest/application -t elem -n meta-data -v "" \
+    -i /manifest/application/meta-data -t attr -n android:name -v "fake-signature-only" \
+    -i /manifest/application/meta-data -t attr -n android:value -v "true" \
+    -r /manifest/application/meta-data -v meta-data ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating3
+cp ./SourceApk/AndroidManifest.xml.updating3 ./SourceApk/AndroidManifest.xml
 
 echo "Rebuilding APK ..."
-java -jar apktool.jar b PSM -o PSM_patched.apk
+java -jar apktool.jar b SourceApk -o patched-unsigned.apk
 
 echo "Signing APK ..."
-jarsigner -storepass "password" -keypass "password" -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore pssuite.keystore PSM_patched.apk pssuite
-zipalign -f -v 4 PSM_patched.apk PSM_patched_align.apk
+zipalign -p 4 patched-unsigned.apk patched-unsigned-aligned.apk
+apksigner sign --ks-key-alias lob --ks ../sign.keystore --ks-pass pass:369852 --key-pass pass:369852 patched-unsigned-aligned.apk
 
-rm PSM_patched.apk
-mv PSM_patched_align.apk PSM_NoPsmDrm_NoRoot.apk
+cp patched-unsigned-aligned.apk patched.apk
+rm patched-unsigned-aligned.apk
+rm patched-unsigned.apk
+rm -rf SourceApk
