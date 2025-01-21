@@ -32,7 +32,7 @@ addUsesPermission 'android.permission.FAKE_PACKAGE_SIGNATURE'
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
 CERTORIGINAL="$(java -jar ApkSig.jar original.apk)"
-xmlstarlet ed -i '/xml/table/rec[@id=1]' -t attr -n first -v yes $MANIFEST_FILE
+xmlstarlet ed -i 'manifest/application' -t meta-data -n android:name="fake-signature" -v android:value="$CERTORIGINAL" AndroidManifest.xml
 
 echo "Applying Android 5.x patch ..."
 bspatch PSM/lib/armeabi/libdefault.so PSM/lib/armeabi/libdefault_real.so patches/android_5.bpatch
