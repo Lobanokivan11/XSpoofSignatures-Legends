@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Module pour parodier les signatures du package.</string>\
+	<string name="permlab_fakePackageSignature">Signature du package parodie</string>
+	<string name="permdesc_fakePackageSignature">Permet à l\'application de faire semblant d\'avoir une signature différente.Les applications malveillantes peuvent être en mesure de vous en abuser pour accéder aux données des applications privées d\'autres applications.Les utilisations légitimes incluent par exemple le contournement des contrôles de signature GMS.Accordez ceci avec prudence!</string>
 </resources>
