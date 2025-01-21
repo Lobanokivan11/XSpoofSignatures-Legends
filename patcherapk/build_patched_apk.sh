@@ -9,25 +9,11 @@ echo "Unpacking Original APK"
 java -jar apktool.jar d original.apk -o SourceApk
 
 echo "Add Spoof Signature Permission"
-MANIFEST_FILE="./SourceApk/AndroidManifest.xml"
-function addUsesPermission ()
-{
-    [ -z "$1" ] && {  echo "ERROR: No attribute value"; exit 1; }
-    ATTR_VALUE=$1
-    if [ -n "$(xmlstarlet sel -T -t -v "/manifest/uses-permission[@android:name=\"${ATTR_VALUE}\"]/@android:name" $MANIFEST_FILE)" ]
-    then
-        echo Found ${ATTR_VALUE}. Skipping
-    else
-        echo Adding ${ATTR_VALUE}
-        TMP_FILE="./SourceApk/AndroidManifest.xml.updating"
-        xmlstarlet ed -S \
-            -s /manifest -t elem -n uses-permission-temp -v "" \
-            -i //uses-permission-temp -t attr -n android:name -v ${ATTR_VALUE} \
-            -r //uses-permission-temp -v uses-permission ${MANIFEST_FILE} > ${TMP_FILE}
-        cp ${TMP_FILE} ${MANIFEST_FILE}
-    fi
-}
-
+xmlstarlet ed -S \
+    -s /manifest/ -t elem -n uses-permission -v "" \
+    -i /manifest/uses-permission -t attr -n android:name -v "android.permission.FAKE_PACKAGE_SIGNATURE" \
+    -r /manifest/uses-permission -v uses-permission ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating1
+cp ./SourceApk/AndroidManifest.xml.updating1 ./SourceApk/AndroidManifest.xml
 addUsesPermission 'android.permission.FAKE_PACKAGE_SIGNATURE'
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
