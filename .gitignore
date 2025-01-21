@@ -10,7 +10,4 @@ build
 /.idea/
 release.*ks
 /patcherapk/SourceApk
-/patcherapk/original.apk
-/patcherapk/patched.apk
-/patcherapk/patched-unsigned-aligned.apk
-/patcherapk/patched-unsigned.apk
+/patcherapk/*.apk
