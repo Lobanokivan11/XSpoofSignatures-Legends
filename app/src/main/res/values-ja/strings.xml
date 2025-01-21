@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">パッケージ署名へのモジュール。</string>\
+	<string name="permlab_fakePackageSignature">スプーフィングパッケージの署名</string>
+	<string name="permdesc_fakePackageSignature">アプリが別の署名のふりをすることができます。悪意のあるアプリケーションは、これを悪用して、他のアプリのプライベートアプリデータにアクセスできる場合があります。正当な用途には、たとえばGMS署名チェックのバイパスが含まれます。これを慎重に許可してください！</string>
 </resources>

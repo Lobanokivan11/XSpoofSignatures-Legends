@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Module tot bedrieglike pakkethandtekeninge.</string>\
+	<string name="permlab_fakePackageSignature">Bedrieglike pakkethandtekening</string>
+	<string name="permdesc_fakePackageSignature">Laat die app toe om voor te gee dat u \'n ander handtekening het.Kwaadwillige toepassings kan dit moontlik misbruik om toegang tot private app -data van ander programme te kry.Legitieme gebruike sluit byvoorbeeld in om die GMS -handtekeningstoetse te omseil.Gee dit met omsigtigheid!</string>
 </resources>
