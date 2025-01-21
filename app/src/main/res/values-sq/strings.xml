@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul për të prishur nënshkrimet e paketave.</string>\
+	<string name="permlab_fakePackageSignature">Nënshkrimi i paketës së plaçkës</string>
+	<string name="permdesc_fakePackageSignature">Lejon aplikacionin të pretendojë të ketë një nënshkrim të ndryshëm.Aplikimet me qëllim të keq mund të jenë në gjendje të abuzojnë me këtë për të hyrë në të dhënat e aplikacioneve private të aplikacioneve të tjera.Përdorimet legjitime përfshijnë për shembull duke anashkaluar kontrollet e nënshkrimit GMS.Jepni këtë me kujdes!</string>
 </resources>

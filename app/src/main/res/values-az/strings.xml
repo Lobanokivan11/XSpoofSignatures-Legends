@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">SPOOF paket imzalarına modul.</string>\
+	<string name="permlab_fakePackageSignature">SPOOF PAKETİN İMZANI</string>
+	<string name="permdesc_fakePackageSignature">Tətbiqə fərqli bir imzaya sahib olmağa imkan verir.Zərərli tətbiqlər digər tətbiqlərin xüsusi tətbiq məlumatlarına daxil olmaq üçün bundan sui-istifadə edə bilər.Qanuni istifadəsi, məsələn GMS imza çeklərini keçərək daxildir.Bunu ehtiyatla verin!</string>
 </resources>
