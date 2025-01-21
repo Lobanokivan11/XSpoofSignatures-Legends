@@ -72,7 +72,7 @@ public class Main implements IXposedHookLoadPackage {
 				// Check if whether to preserve the other signatures
 				boolean makeSoleSigner = pi.applicationInfo.metaData.getBoolean("fake-signature-only", true);
 
-				Log.d(TAG, "Spoofing signature for " + pi.packageName);
+				XposedBridge.log("[XSpoofSignatures] Spoofing signature for " + pi.packageName);
 
 				if (pi.signatures != null) {
 					Signature sig = new Signature(fakeSig);
@@ -132,6 +132,6 @@ public class Main implements IXposedHookLoadPackage {
 
 		final Class<?> hookClass = XposedHelpers.findClass(targetClass, lpparam.classLoader);
 		XposedBridge.hookAllMethods(hookClass, "generatePackageInfo", hook);
-		Log.d(TAG, String.format("Hooking all %s#generatePackageInfo(...)", targetClass));
+		XposedBridge.log(("[XSpoofSignatures] Hooking to ", targetClass));
 	}
 }

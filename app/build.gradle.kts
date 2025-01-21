@@ -8,26 +8,9 @@ android {
 
 	defaultConfig {
 		applicationId = "dev.materii.rushii.xspoofsignatures"
-		minSdk = 16
+		minSdk = 29
 		versionCode = 1
 		versionName = "1.0.0"
-	}
-
-	signingConfigs {
-		val keystoreFile = System.getenv("KEYSTORE_FILE")
-			?: return@signingConfigs
-
-		create("release") {
-			storeFile = rootDir.resolve(keystoreFile)
-			storePassword = System.getenv("KEYSTORE_PASSWORD")
-			keyAlias = System.getenv("KEY_ALIAS")
-			keyPassword = System.getenv("KEY_PASSWORD")
-
-			enableV1Signing = true
-			enableV2Signing = true
-			enableV3Signing = true
-			enableV4Signing = false
-		}
 	}
 
 	buildTypes {
@@ -48,8 +31,8 @@ android {
 	}
 
 	compileOptions {
-		sourceCompatibility = JavaVersion.VERSION_1_8
-		targetCompatibility = JavaVersion.VERSION_1_8
+		sourceCompatibility = JavaVersion.VERSION_17
+		targetCompatibility = JavaVersion.VERSION_17
 	}
 }
 

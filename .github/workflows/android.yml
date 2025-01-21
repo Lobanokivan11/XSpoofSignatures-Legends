@@ -1,0 +1,54 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+
+    - name: Prepare environment
+      run: |
+        curl -s "https://get.sdkman.io" | bash
+        source "$HOME/.sdkman/bin/sdkman-init.sh"
+        sdk install gradle
+    
+    - uses: actions/checkout@v4
+    - name: set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
+        
+
+    - name: CHMOD GRADLEW
+      run: chmod 777 ./gradlew
+    - name: Build with Gradle
+      run: gradle build
+    - name: Build Debug APK
+      run: gradle assembleDebug
+    - name: Nightly build
+      uses: softprops/action-gh-release@v1
+      with:
+        body: Debug Builds
+        tag_name: github_nightly_debug
+        name: Debug Builds
+        files: |
+           app/build/outputs/apk/debug/app-debug.apk
+    - uses: actions/cache@v4
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+
+
