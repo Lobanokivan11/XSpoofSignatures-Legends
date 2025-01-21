@@ -1,2 +1,2 @@
-rootProject.name = "XSpoofSignatures"
+rootProject.name = "XSpoofSignatures-Legends"
 include(":app")

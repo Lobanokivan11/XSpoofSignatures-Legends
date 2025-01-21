@@ -1,4 +1,4 @@
-# XSpoofSignatures
+# XSpoofSignatures Legends
 
 Xposed module to spoof package signatures.
 
@@ -15,7 +15,7 @@ Xposed module to spoof package signatures.
 1. Use [Magisk](https://github.com/topjohnwu/Magisk) to root your device
 2. Enable Zygisk
 3. Install [LSPosed](https://github.com/LSPosed/LSPosed)
-4. Install XSpoofSignatures from [here](https://github.com/rushiiMachine/XSpoofSignatures/releases/latest)
+4. Install XSpoofSignatures from [here](https://github.com/Lobanokivan11/XSpoofSignatures-Legends/releases/latest)
 5. Enable it in LSPosed
 
 ## Usage (developers)
