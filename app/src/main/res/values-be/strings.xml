@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Модуль для падману з подпісамі.</string>\
+	<string name="permlab_fakePackageSignature">Падробка подпісу пакета</string>
+	<string name="permdesc_fakePackageSignature">Дазваляе прыкладанне рабіць выгляд, што мае іншы подпіс.Шкоднасныя прыкладанні могуць злоўжываць гэтым для доступу да прыватных дадзеных прыкладанняў іншых прыкладанняў.Законнае выкарыстанне ўключае, напрыклад, абыходныя праверкі подпісаў GMS.Дайце гэта з асцярожнасцю!</string>
 </resources>

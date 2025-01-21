@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">ሞዱል ወደ ማራኪ ጥቅል ጥቅል ፊርማዎች.</string>\
+	<string name="permlab_fakePackageSignature">ካራማ ጥቅል ፊርማ</string>
+	<string name="permdesc_fakePackageSignature">መተግበሪያው የተለየ ፊርማ እንዲያስብ ይፈቅድለታል.ሌሎች መተግበሪያዎችን የግል መተግበሪያ ውሂብ ለመድረስ ይህንን ማጠቃለያ ሊጠቀሙበት ይችላሉ.ሕጋዊ አጠቃቀሞች የ GMS ፊርማ ቼክ በማይመለስ ላይ ያጠቃልላል.ይህንን በጥንቃቄ ይስጡ!</string>
 </resources>

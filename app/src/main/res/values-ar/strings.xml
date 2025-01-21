@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">الوحدة النمطية لتوقيعات الحزمة محاكاة ساخرة.</string>\
+	<string name="permlab_fakePackageSignature">توقيع حزمة محاكاة ساخرة</string>
+	<string name="permdesc_fakePackageSignature">يسمح للتطبيق بالتظاهر بتوقيع مختلف.قد تكون التطبيقات الضارة قادرة على إساءة استخدام هذا للوصول إلى بيانات التطبيقات الخاصة للتطبيقات الأخرى.تشمل الاستخدامات المشروعة على سبيل المثال تجاوز عمليات التحقق من توقيع GMS.منح هذا بحذر!</string>
 </resources>

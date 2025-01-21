@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Модул към подписи на пакета.</string>\
+	<string name="permlab_fakePackageSignature">Подпис на подпис на пакет</string>
+	<string name="permdesc_fakePackageSignature">Позволява на приложението да се преструва, че има различен подпис.Злоулячните приложения може да са в състояние да злоупотребяват с това, за да имат достъп до частни приложения на други приложения.Легитимните приложения включват например заобикалящи проверки за подписи на GMS.Дайте това с повишено внимание!</string>
 </resources>

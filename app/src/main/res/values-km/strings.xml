@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">ម៉ូឌុលទៅហត្ថលេខាកញ្ចប់កញ្ចប់។</string>\
+	<string name="permlab_fakePackageSignature">ហត្ថលេខាកញ្ចប់ Spooof</string>
+	<string name="permdesc_fakePackageSignature">អនុញ្ញាតឱ្យកម្មវិធីធ្វើពុតឱ្យមានហត្ថលេខាផ្សេង។កម្មវិធីដែលមានគំនិតអាក្រក់អាចនឹងអាចរំលោភបំពាននេះដើម្បីទទួលបានទិន្នន័យកម្មវិធីឯកជនរបស់កម្មវិធីផ្សេងទៀត។ការប្រើប្រាស់ស្របច្បាប់រួមមានឧទាហរណ៍ការឆ្លងកាត់ការត្រួតពិនិត្យហត្ថលេខារបស់ GMS ។ផ្តល់ការនេះដោយប្រុងប្រយ័ត្ន!</string>
 </resources>
