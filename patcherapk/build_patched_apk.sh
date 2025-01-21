@@ -38,7 +38,7 @@ java -jar apktool.jar b SourceApk -o patched-unsigned.apk
 
 echo "Signing APK ..."
 zipalign -p 4 patched-unsigned.apk patched-unsigned-aligned.apk
-apksigner sign --ks-key-alias lob --ks ../sign.keystore --ks-pass pass:369852 --key-pass pass:369852 patched-unsigned-aligned.apk
+apksigner sign --ks-key-alias lob --ks sign.keystore --ks-pass pass:369852 --key-pass pass:369852 patched-unsigned-aligned.apk
 
 cp patched-unsigned-aligned.apk patched.apk
 rm patched-unsigned-aligned.apk
