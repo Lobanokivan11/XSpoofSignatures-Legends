@@ -14,7 +14,6 @@ xmlstarlet ed -S \
     -i /manifest/uses-permission -t attr -n android:name -v "android.permission.FAKE_PACKAGE_SIGNATURE" \
     -r /manifest/uses-permission -v uses-permission ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating1
 cp ./SourceApk/AndroidManifest.xml.updating1 ./SourceApk/AndroidManifest.xml
-addUsesPermission 'android.permission.FAKE_PACKAGE_SIGNATURE'
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
 CERTORIGINAL="$(java -jar ApkSig.jar original.apk)"
