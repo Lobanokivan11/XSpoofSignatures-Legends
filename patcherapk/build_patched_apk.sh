@@ -13,7 +13,7 @@ xmlstarlet edit --inplace -s "/manifest" -t elem -n uses-permission-temp -v "" -
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
 CERTORIGINAL="$(java -jar ApkSig.jar original.apk)"
-xmlstarlet edit --inplace -s "/manifest/application" -t elem -n meta-data-temp -v "" -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:name' -v 'fake-signature' -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:value' -v '$CERTORIGINAL' -r "/manifest/application/meta-data-temp" -v meta-data ./SourceApk/AndroidManifest.xml
+xmlstarlet edit --inplace -s "/manifest/application" -t elem -n meta-data-temp -v "" -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:name' -v 'fake-signature' -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:value' -v "$CERTORIGINAL" -r "/manifest/application/meta-data-temp" -v meta-data ./SourceApk/AndroidManifest.xml
 
 echo "Add Signature Using By System"
 xmlstarlet edit --inplace -s "/manifest/application" -t elem -n meta-data-temp -v "" -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:name' -v 'fake-signature-only' -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:value' -v 'true' -r "/manifest/application/meta-data-temp" -v meta-data ./SourceApk/AndroidManifest.xml
