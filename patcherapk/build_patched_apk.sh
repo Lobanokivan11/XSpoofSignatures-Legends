@@ -6,7 +6,7 @@ if [ ! -f "original.apk" ]; then
 fi
 
 echo "Unpacking Original APK"
-java -jar apktool.jar d original.apk -o SourceApk
+java -jar apktool.jar d -r -s original.apk -o SourceApk
 
 echo "Add Spoof Signature Permission"
 xmlstarlet ed -S \
