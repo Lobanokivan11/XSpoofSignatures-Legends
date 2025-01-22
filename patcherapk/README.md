@@ -1,5 +1,12 @@
 # android.permission.FAKE_PACKAGE_SIGNATURE Permission Apk Patcher
 
+## What You Need
+
+
+[Magisk](https://github.com/topjohnwu/Magisk) + Zygisk
+[LSPosed](https://github.com/LSPosed/LSPosed)
+[XSpoofSignatures](https://github.com/Lobanokivan11/XSpoofSignatures-Legends/releases/latest) (Activated In Lsposed Manager)
+
 ## Usage (Linux)
 
 1. Get Any Clean Apk (No Mod, ONLY CLEAN APK), place to patcherapk folder and rename to original.apk
