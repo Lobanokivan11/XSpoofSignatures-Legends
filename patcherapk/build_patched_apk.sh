@@ -9,14 +9,14 @@ echo "Unpacking Original APK"
 java -jar apktool.jar d -s original.apk -o SourceApk
 
 echo "Add Spoof Signature Permission"
-xmlstarlet edit --inplace -a "/manifest/uses-permission" -t 'attr' -n 'android:name' -v 'android.permission.FAKE_PACKAGE_SIGNATURE' ./SourceApk/AndroidManifest.xml
+xmlstarlet edit --inplace -s "/manifest" -t elem -n uses-permission-temp -v "" -a "/manifest/uses-permission-temp" -t 'attr' -n 'android:name' -v 'android.permission.FAKE_PACKAGE_SIGNATURE' -r "/manifest/uses-permission-temp" -v uses-permission ./SourceApk/AndroidManifest.xml
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
 CERTORIGINAL="$(java -jar ApkSig.jar original.apk)"
-xmlstarlet edit --inplace -a "/manifest/application/meta-data" -t 'attr' -n 'android:name' -v 'fake-signature' -a "/manifest/application/meta-data" -t 'attr' -n 'android:value' -v '$CERTORIGINAL' ./SourceApk/AndroidManifest.xml
+xmlstarlet edit --inplace -s "/manifest/application" -t elem -n meta-data-temp -v "" -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:name' -v 'fake-signature' -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:value' -v '$CERTORIGINAL' -r "/manifest/application/meta-data-temp" -v meta-data ./SourceApk/AndroidManifest.xml
 
 echo "Add Signature Using By System"
-xmlstarlet edit --inplace -a "/manifest/application/meta-data" -t 'attr' -n 'android:name' -v 'fake-signature-only' -a "/manifest/application/meta-data" -t 'attr' -n 'android:value' -v 'true' ./SourceApk/AndroidManifest.xml
+xmlstarlet edit --inplace -s "/manifest/application" -t elem -n meta-data-temp -v "" -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:name' -v 'fake-signature-only' -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:value' -v 'true' -r "/manifest/application/meta-data-temp" -v meta-data ./SourceApk/AndroidManifest.xml
 
 echo "Rebuilding APK ..."
 java -jar apktool.jar b SourceApk -o patched-unsigned.apk
