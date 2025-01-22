@@ -9,28 +9,14 @@ echo "Unpacking Original APK"
 java -jar apktool.jar d -s original.apk -o SourceApk
 
 echo "Add Spoof Signature Permission"
-xmlstarlet ed -S \
-    -s manifest -t elem -n uses-permission-temp -v "" \
-    -i manifest/uses-permission-temp -t attr -n android:name -v "android.permission.FAKE_PACKAGE_SIGNATURE" \
-    -r manifest/uses-permission-temp -v uses-permission ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating1
-cp ./SourceApk/AndroidManifest.xml.updating1 ./SourceApk/AndroidManifest.xml
+xmlstarlet edit --inplace -a "/manifest/uses-permission[not(@android:name)]" -t 'attr' -n 'android:name' -v 'android.permission.FAKE_PACKAGE_SIGNATURE' ./SourceApk/AndroidManifest.xml
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
 CERTORIGINAL="$(java -jar ApkSig.jar original.apk)"
-xmlstarlet ed -S \
-    -s manifest/application -t elem -n meta-data -v "" \
-    -i manifest/application/meta-data -t attr -n android:name -v "fake-signature" \
-    -i manifest/application/meta-data -t attr -n android:value -v "$CERTORIGINAL" \
-    -r manifest/application/meta-data -v meta-data ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating2
-cp ./SourceApk/AndroidManifest.xml.updating2 ./SourceApk/AndroidManifest.xml
+xmlstarlet edit --inplace -a "/manifest/application/meta-data[not(@android:name)]" -t 'attr' -n 'android:name' -v 'fake-signature' --inplace -a "/manifest/application/meta-data[not(@android:value)]" -t 'attr' -n 'android:value' -v '$CERTORIGINAL' ./SourceApk/AndroidManifest.xml
 
 echo "Add Signature Using By System"
-xmlstarlet ed -S \
-    -s manifest/application -t elem -n meta-data -v "" \
-    -i manifest/application/meta-data -t attr -n android:name -v "fake-signature-only" \
-    -i manifest/application/meta-data -t attr -n android:value -v "true" \
-    -r manifest/application/meta-data -v meta-data ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating3
-cp ./SourceApk/AndroidManifest.xml.updating3 ./SourceApk/AndroidManifest.xml
+xmlstarlet edit --inplace -a "/manifest/application/meta-data[not(@android:name)]" -t 'attr' -n 'android:name' -v 'fake-signature-only' --inplace -a "/manifest/application/meta-data[not(@android:value)]" -t 'attr' -n 'android:value' -v 'true' ./SourceApk/AndroidManifest.xml
 
 echo "Rebuilding APK ..."
 java -jar apktool.jar b SourceApk -o patched-unsigned.apk
