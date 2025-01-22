@@ -10,9 +10,9 @@ java -jar apktool.jar d original.apk -o SourceApk
 
 echo "Add Spoof Signature Permission"
 xmlstarlet ed -S \
-    -s /manifest -t elem -n uses-permission -v "" \
-    -i /manifest/uses-permission -t attr -n android:name -v "android.permission.FAKE_PACKAGE_SIGNATURE" \
-    -r /manifest/uses-permission -v uses-permission ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating1
+    -s /manifest -t elem -n uses-permission-temp -v "" \
+    -i //uses-permission-temp -t attr -n android:name -v "android.permission.FAKE_PACKAGE_SIGNATURE" \
+    -r //uses-permission-temp -v uses-permission ./SourceApk/AndroidManifest.xml > ./SourceApk/AndroidManifest.xml.updating1
 cp ./SourceApk/AndroidManifest.xml.updating1 ./SourceApk/AndroidManifest.xml
 
 echo "ADD SIGNATURE FROM original.apk FOR SPOOF"
