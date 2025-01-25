@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">ماڈیول ٹو اسپوف پیکیج کے دستخطوں کو۔</string>\
+	<string name="permlab_fakePackageSignature">اسپوف پیکیج کے دستخط</string>
+	<string name="permdesc_fakePackageSignature">ایپ کو ایک مختلف دستخط کا بہانہ کرنے کی اجازت دیتا ہے۔بدنیتی پر مبنی ایپلی کیشنز دوسرے ایپس کے نجی ایپ ڈیٹا تک رسائی کے ل it اس کے ساتھ غلط استعمال کرنے کے قابل ہوسکتی ہیں۔جائز استعمال میں مثال کے طور پر جی ایم ایس کے دستخطی چیکوں کو نظرانداز کرنا شامل ہے۔احتیاط کے ساتھ اس کو عطا کریں!</string>
 </resources>

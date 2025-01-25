@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Paketli imzolar moduli.</string>\
+	<string name="permlab_fakePackageSignature">Spoe paketini imzolash</string>
+	<string name="permdesc_fakePackageSignature">Ilovaga boshqa imzoni ko\'rsatishga imkon beradi.Zararli arizalar boshqa ilovalarning shaxsiy ilovalariga kirish uchun buni suiiste\'mol qila oladi.Qonuniy foydalanish, masalan, GMS imzosini tekshirishni chetlab o\'tishni o\'z ichiga oladi.Buni ehtiyot bo\'ling!</string>
 </resources>
