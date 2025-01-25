@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modül için paket imzaları.</string>\
+	<string name="permlab_fakePackageSignature">Parodi paketi imzası</string>
+	<string name="permdesc_fakePackageSignature">Uygulamanın farklı bir imzaya sahip gibi davranmasını sağlar.Kötü amaçlı uygulamalar, diğer uygulamaların özel uygulama verilerine erişmek için bunu kötüye kullanabilir.Meşru kullanımlar, örneğin GMS imza kontrollerini atlamayı içerir.Bunu dikkatle verin!</string>
 </resources>

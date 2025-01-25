@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Mô -đun để giả mạo chữ ký gói.</string>\
+	<string name="permlab_fakePackageSignature">Gói giả mạo chữ ký</string>
+	<string name="permdesc_fakePackageSignature">Cho phép ứng dụng giả vờ có một chữ ký khác.Các ứng dụng độc hại có thể lạm dụng điều này để truy cập dữ liệu ứng dụng riêng của các ứng dụng khác.Sử dụng hợp pháp bao gồm ví dụ bỏ qua kiểm tra chữ ký GMS.Cấp này một cách thận trọng!</string>
 </resources>

@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Module ukusayina iphakheji.</string>\
+	<string name="permlab_fakePackageSignature">Isiginesha yephakheji e-Spoof</string>
+	<string name="permdesc_fakePackageSignature">Ivumela uhlelo lokusebenza ukwenza sengathi lunesiginesha ehlukile.Izicelo ezinonya zingase zikwazi ukusebenzisa ukusebenzisa lokhu ukufinyelela idatha yohlelo lokusebenza yangasese yezinye izinhlelo zokusebenza.Ukusetshenziswa okusemthethweni kufaka isibonelo sokudlula amasheke okusayina kwe-GMS.Siphe lokhu ngokuqapha!</string>
 </resources>

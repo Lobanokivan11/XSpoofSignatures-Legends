@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Podpisy balíka modulu na spoof.</string>\
+	<string name="permlab_fakePackageSignature">Podpis spoof</string>
+	<string name="permdesc_fakePackageSignature">Umožňuje aplikácii predstierať, že má iný podpis.Škodlivé aplikácie to môžu byť schopné zneužiť, aby získali prístup k súkromným aplikáciám v iných aplikáciách.Legitímne použitia zahŕňajú napríklad obídenie kontrol GMS podpisov.Udeľte to opatrne!</string>
 </resources>
