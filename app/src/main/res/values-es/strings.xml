@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Módulo a falsificar las firmas de paquetes.</string>\
+	<string name="permlab_fakePackageSignature">Firma de paquete de parodia</string>
+	<string name="permdesc_fakePackageSignature">Permite que la aplicación pretenda tener una firma diferente.Las aplicaciones maliciosas pueden abusar de esto para acceder a los datos de aplicaciones privadas de otras aplicaciones.Los usos legítimos incluyen, por ejemplo, evitar las verificaciones de firma GMS.Otorga esto con precaución!</string>
 </resources>

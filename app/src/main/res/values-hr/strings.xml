@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul za spoof paketne potpise.</string>\
+	<string name="permlab_fakePackageSignature">Potpis paketa za spoof</string>
+	<string name="permdesc_fakePackageSignature">Omogućuje aplikaciji da se pretvara da ima drugačiji potpis.Zlonamjerne aplikacije mogu to moći zloupotrijebiti kako bi pristupile privatnim podacima aplikacija drugih aplikacija.Legitimne uporabe uključuju na primjer zaobilazeći provjere GMS potpisa.Odobriti ovo s oprezom!</string>
 </resources>

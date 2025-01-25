@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul untuk menandai tanda tangan paket.</string>\
+	<string name="permlab_fakePackageSignature">Tanda tangan paket spoof</string>
+	<string name="permdesc_fakePackageSignature">Memungkinkan aplikasi untuk berpura -pura memiliki tanda tangan yang berbeda.Aplikasi berbahaya mungkin dapat menyalahgunakan ini untuk mengakses data aplikasi pribadi dari aplikasi lain.Penggunaan yang sah termasuk misalnya melewati pemeriksaan tanda tangan GMS.Berikan ini dengan hati -hati!</string>
 </resources>

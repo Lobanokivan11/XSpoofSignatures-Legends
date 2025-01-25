@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">સ્પોફ પેકેજ સહીઓ માટે મોડ્યુલ.</string>\
+	<string name="permlab_fakePackageSignature">મઠ પેકેજ સહી</string>
+	<string name="permdesc_fakePackageSignature">એપ્લિકેશનને અલગ સહી હોવાનો tend ોંગ કરવાની મંજૂરી આપે છે.દૂષિત એપ્લિકેશનો અન્ય એપ્લિકેશનોના ખાનગી એપ્લિકેશન ડેટાને to ક્સેસ કરવા માટે આનો દુરુપયોગ કરી શકે છે.કાયદેસરના ઉપયોગમાં ઉદાહરણ તરીકે જીએમએસ સહી તપાસને બાયપાસ કરવું શામેલ છે.સાવધાની સાથે આ આપો!</string>
 </resources>

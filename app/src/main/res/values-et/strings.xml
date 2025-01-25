@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Moodul kuni paki allkirjad.</string>\
+	<string name="permlab_fakePackageSignature">Stud paketi allkiri</string>
+	<string name="permdesc_fakePackageSignature">Võimaldab rakendusel teeselda teistsugust allkirja.Pahatahtlikud rakendused võivad seda kuritarvitada, et pääseda juurde teiste rakenduste erakestete andmetele.Õigustatud kasutusalade hulka kuulub näiteks GMS -i allkirjakontrollide möödumine.Andke see ettevaatusega!</string>
 </resources>

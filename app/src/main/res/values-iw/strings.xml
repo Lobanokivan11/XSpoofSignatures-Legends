@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">מודול לזייף חתימות חבילה.</string>\
+	<string name="permlab_fakePackageSignature">חתימת חבילת זיוף</string>
+	<string name="permdesc_fakePackageSignature">מאפשר לאפליקציה להעמיד פנים שיש חתימה אחרת.יישומים זדוניים עשויים להיות מסוגלים להתעלל בכך כדי לגשת לנתוני אפליקציות פרטיות של אפליקציות אחרות.שימושים לגיטימיים כוללים למשל בדיקות חתימה של GMS.העניקו זאת בזהירות!</string>
 </resources>
