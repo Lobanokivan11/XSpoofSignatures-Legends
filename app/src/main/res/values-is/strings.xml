@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Eining til að spilla undirskrift pakka.</string>\
+	<string name="permlab_fakePackageSignature">SPOOF PAKKUR undirskrift</string>
+	<string name="permdesc_fakePackageSignature">Leyfir forritinu að þykjast hafa aðra undirskrift.Illgjarn forrit geta verið fær um að misnota þetta til að fá aðgang að einkaforritum af öðrum forritum.Lögmæt notkun felur í sér til dæmis framhjá GMS undirskriftareftirliti.Gefðu þessu með varúð!</string>
 </resources>

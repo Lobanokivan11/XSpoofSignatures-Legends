@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Пакетті қолтаңбалардан қорғау модулі.</string>\
+	<string name="permlab_fakePackageSignature">Босануға арналған қолтаңба</string>
+	<string name="permdesc_fakePackageSignature">Қолданбаға басқа қолтаңба болуға мүмкіндік береді.Зиянды қосымшалар мұны басқа қолданбалардың жеке бағдарламаларына қол жеткізу үшін оны теріс пайдалана алады.Заңды пайдалану мысалы, GMS қолтаңбаларын тексеруді айналып өтуі мүмкін.Мұны сақтықпен беріңіз!</string>
 </resources>

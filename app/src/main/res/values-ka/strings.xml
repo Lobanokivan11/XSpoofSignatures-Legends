@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">მოდული შეფუთული პაკეტის ხელმოწერებისთვის.</string>\
+	<string name="permlab_fakePackageSignature">Spoof პაკეტის ხელმოწერა</string>
+	<string name="permdesc_fakePackageSignature">საშუალებას აძლევს აპლიკაციას, რომ პრეტენზია ჰქონდეს სხვა ხელმოწერას.მავნე პროგრამებმა შეიძლება შეეძლოს ეს ბოროტად გამოყენება სხვა აპლიკაციების კერძო აპლიკაციის მონაცემებზე წვდომისათვის.ლეგიტიმური გამოყენებები მოიცავს მაგალითად, GMS ხელმოწერის შემოწმების გვერდის ავლით.მიანიჭეთ ეს სიფრთხილით!</string>
 </resources>

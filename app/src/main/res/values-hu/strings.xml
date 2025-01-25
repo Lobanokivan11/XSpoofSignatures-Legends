@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul a csomagolási aláírások hamisításához.</string>\
+	<string name="permlab_fakePackageSignature">Hamis csomag aláírás</string>
+	<string name="permdesc_fakePackageSignature">Lehetővé teszi az alkalmazás számára, hogy úgy tesz, mintha más aláírás lenne.A rosszindulatú alkalmazások visszaélhetnek ezzel, hogy hozzáférjenek más alkalmazások privát alkalmazásának adatainak elérése érdekében.A legitim felhasználások magukban foglalják például a GMS aláírás -ellenőrzések megkerülését.VIGYÁZAT VIGYÁZAT!</string>
 </resources>

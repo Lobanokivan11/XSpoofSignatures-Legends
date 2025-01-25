@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">पैकेज हस्ताक्षर को स्पूफ करने के लिए मॉड्यूल।</string>\
+	<string name="permlab_fakePackageSignature">स्पूफ पैकेज हस्ताक्षर</string>
+	<string name="permdesc_fakePackageSignature">ऐप को एक अलग हस्ताक्षर करने का नाटक करने की अनुमति देता है।दुर्भावनापूर्ण एप्लिकेशन अन्य ऐप्स के निजी ऐप डेटा तक पहुंचने के लिए इसका दुरुपयोग करने में सक्षम हो सकते हैं।वैध उपयोगों में उदाहरण के लिए जीएमएस सिग्नेचर चेक को बायपास करना शामिल है।इसे सावधानी के साथ दें!</string>
 </resources>

@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Módulo a firmas de paquetes de spoof.</string>\
+	<string name="permlab_fakePackageSignature">Firma do paquete de spoof</string>
+	<string name="permdesc_fakePackageSignature">Permite que a aplicación pretenda ter unha sinatura diferente.Pode que as aplicacións maliciosas poidan abusar disto para acceder a datos de aplicacións privadas doutras aplicacións.Os usos lexítimos inclúen, por exemplo, as comprobacións de sinatura GMS.Concede isto con precaución!</string>
 </resources>

@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Firme del modulo per falsificare.</string>\
+	<string name="permlab_fakePackageSignature">Firma del pacchetto di parodia</string>
+	<string name="permdesc_fakePackageSignature">Consente all\'app di fingere di avere una firma diversa.Le applicazioni dannose potrebbero essere in grado di abusare di questo per accedere ai dati di app privati ​​di altre app.Gli usi legittimi includono ad esempio il bypassing di controlli di firma GMS.Concedi con cautela!</string>
 </resources>

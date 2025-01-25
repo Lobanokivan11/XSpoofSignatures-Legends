@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul zum Parodieren von Paketsignaturen.</string>\
+	<string name="permlab_fakePackageSignature">Parodie -Paketsignatur</string>
+	<string name="permdesc_fakePackageSignature">Ermöglicht die App so, dass sie eine andere Signatur haben.Böswillige Anwendungen können dies möglicherweise missbrauchen, um auf private App -Daten anderer Apps zuzugreifen.Zu den legitimen Verwendungen gehören zum Beispiel die Umgehung von GMS -Signaturprüfungen.Gewähren Sie dies mit Vorsicht!</string>
 </resources>
