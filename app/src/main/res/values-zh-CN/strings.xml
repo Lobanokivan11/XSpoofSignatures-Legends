@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-<string name="module_description">欺骗包装签名的模块。</string>\
-	<string name="permlab_fakePackageSignature">欺骗包装签名</string>
-	<string name="permdesc_fakePackageSignature">允许应用程序假装具有不同的签名。恶意应用程序可能能够滥用此功能以访问其他应用程序的私人应用数据。合法用途包括绕过GMS签名检查。谨慎地授予此！</string>
-</resources>
