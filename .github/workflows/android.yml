@@ -12,12 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-
-    - name: Prepare environment
-      run: |
-        curl -s "https://get.sdkman.io" | bash
-        source "$HOME/.sdkman/bin/sdkman-init.sh"
-        sdk install gradle
     
     - uses: actions/checkout@v4
     - name: set up JDK 17
