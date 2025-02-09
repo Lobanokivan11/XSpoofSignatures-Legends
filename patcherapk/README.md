@@ -12,7 +12,7 @@
 ## Usage (Linux)
 
 1. Get Any Clean Apk (No Mod, ONLY CLEAN APK), place to patcherapk folder and rename to original.apk
-2. Execute bash build_patched_apk.sh
+2. Execute ```bash build_patched_apk.sh```
 3. If Patching will Complete with no errors, You Need To see patched.apk, It,s patched apk with android.permission.FAKE_PACKAGE_SIGNATURE Permission.
 4. You may install patched.apk To Android Phone Using 2 ways
 4.1 copy patched.apk to Phone's Memory, grant Allow Install From Unknown Sources, click To patched.apk inside of file manager, and click Install.
