@@ -4,8 +4,10 @@
 
 
 [Magisk](https://github.com/topjohnwu/Magisk) + Zygisk
+
 [LSPosed](https://github.com/LSPosed/LSPosed)
-[XSpoofSignatures](https://github.com/Lobanokivan11/XSpoofSignatures-Legends/releases/latest) (Activated In Lsposed Manager)
+
+[XSpoofSignatures-Legends](https://github.com/Lobanokivan11/XSpoofSignatures-Legends/releases/latest) (Activated In Lsposed Manager)
 
 ## Usage (Linux)
 
