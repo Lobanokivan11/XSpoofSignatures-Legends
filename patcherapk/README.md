@@ -1,5 +1,10 @@
 # android.permission.FAKE_PACKAGE_SIGNATURE Permission Apk Patcher
 
+## Note
+Not all Apk's May Be Added TO Spoof Signature
+
+Please, check AndroidManifest.xml by Apktool To understand for succerful Signature Spoofing Permission patch
+
 ## What You Need
 
 
