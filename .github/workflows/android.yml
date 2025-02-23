@@ -24,6 +24,8 @@ jobs:
 
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
+    - name: Setup Project Before Building
+      run: sdkmanager 'platforms;android-36'
     - name: Build with Gradle
       run: gradle build
     - name: Build Debug APK
