@@ -27,7 +27,7 @@ jobs:
     - name: Initialize APT Sources Before SDK Install
       run: sudo apt update
     - name: Uninstall Conflicting Packages Before SDK Install
-      run: sudo apt uninstall aapt aidl split-select zipalign
+      run: sudo apt remove -y aapt aidl split-select zipalign
     - name: Upgrade All Packages Before SDK Install For Succefully Install
       run: sudo apt upgrade -y
     - name: Install Android SDK Manager
