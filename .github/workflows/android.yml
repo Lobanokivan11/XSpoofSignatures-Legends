@@ -26,16 +26,6 @@ jobs:
       run: chmod 777 ./gradlew
     - name: Build with Gradle
       run: gradle build
-    - name: Build Debug APK
-      run: gradle assembleDebug
-    - name: Nightly build
-      uses: softprops/action-gh-release@v1
-      with:
-        body: Debug Builds
-        tag_name: github_nightly_debug
-        name: Debug Builds
-        files: |
-           app/build/outputs/apk/debug/app-debug.apk
     - uses: actions/cache@v4
       with:
         path: |
