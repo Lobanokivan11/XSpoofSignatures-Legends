@@ -24,8 +24,16 @@ jobs:
 
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
-    - name: Setup Project Before Building
-      run: sdkmanager 'platforms;android-36'
+    - name: Install Android SDK Manager
+      run: sudo apt install android-sdk sdkmanager
+    - name: Initialize Android SDK Manager (sdkmanager) Before Setup
+      run: yes | sdkmanager --licenses
+    - name: Setup Android SDK Before Building (Part one)
+      run: sudo sdkmanager 'platforms;android-36'
+    - name: Setup Android SDK Before Building (Part two)
+      run: sudo sdkmanager 'platform-tools'
+    - name: Setup Android SDK Before Building (Part three)
+      run: sudo sdkmanager 'build-tools;34.0.0'
     - name: Build with Gradle
       run: gradle build
     - name: Build Debug APK
