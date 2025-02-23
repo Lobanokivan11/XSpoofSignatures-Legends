@@ -4,13 +4,13 @@ plugins {
 
 android {
 	namespace = "dev.materii.rushii.xspoofsignatures"
-	compileSdk = 35
+	compileSdk = 36
 
 	defaultConfig {
 		applicationId = "dev.materii.rushii.xspoofsignatures"
 		minSdk = 29
-		versionCode = 3
-		versionName = "2.0.0"
+		versionCode = 4
+		versionName = "2.1.0"
 	}
 
 	buildTypes {
