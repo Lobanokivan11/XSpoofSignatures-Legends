@@ -25,7 +25,7 @@ jobs:
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
     - name: Install Android SDK Manager
-      run: sudo apt install android-sdk google-android-cmdline-tools-13.0-installer
+      run: sudo apt install android-sdk google-android-cmdline-tools-13.0-installer google-android-build-tools
     - name: Initialize Android SDK Manager (sdkmanager) Before Setup
       run: yes | sdkmanager --licenses
     - name: Setup Android SDK Before Building (Part one)
