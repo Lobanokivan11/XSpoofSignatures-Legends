@@ -26,6 +26,10 @@ jobs:
       run: chmod 777 ./gradlew
     - name: Initialize APT Sources Before SDK Install
       run: sudo apt update
+    - name: Uninstall Conflicting Packages Before SDK Install
+      run: sudo apt uninstall aapt aidl split-select zipalign
+    - name: Upgrade All Packages Before SDK Install For Succefully Install
+      run: sudo apt upgrade -y
     - name: Install Android SDK Manager
       run: sudo apt install android-sdk google-android-cmdline-tools-13.0-installer google-android-build-tools-34.0.0-installer
     - name: Initialize Android SDK Manager (sdkmanager) Before Setup
