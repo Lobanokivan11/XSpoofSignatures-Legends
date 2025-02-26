@@ -17,7 +17,8 @@ Please, check AndroidManifest.xml by Apktool To understand for succerful Signatu
 ## Usage (Linux)
 
 ### Note
-If You Are Do It At First Time, You Need Execute ```bash install_deps.sh```
+If You Are Do It At First Time, You Need Execute As Sudo
+```sudo bash install_deps.sh```
 To Install Need Depencies
 
 ### Before Patching
