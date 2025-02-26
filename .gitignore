@@ -12,3 +12,4 @@ release.*ks
 /patcherapk/SourceApk
 /patcherapk/*.apk
 /patcherapk/*.idsig
+/patcherapk/logs
