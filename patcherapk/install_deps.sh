@@ -1,3 +1,4 @@
+mkdir logs
 echo "Updating Apt Sources"
 apt update -y > logs/aptupdate.log
 echo "Updating Apt Packages"

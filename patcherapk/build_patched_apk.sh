@@ -1,3 +1,4 @@
+mkdir logs
 if [ ! -f "original.apk" ]; then 
     echo "You Need to get APK (Not Apks) from apkmirror to Add Spoof Signature Permission"
     echo "You Also Need to Patch Rom For To add Spoof Signature Permission Support"
