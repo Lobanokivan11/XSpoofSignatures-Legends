@@ -20,7 +20,7 @@ echo "Add Signature Using By System"
 xmlstarlet edit --inplace -s "/manifest/application" -t elem -n meta-data-temp -v "" -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:name' -v 'fake-signature-only' -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:value' -v 'true' -r "/manifest/application/meta-data-temp" -v meta-data ./SourceApk/AndroidManifest.xml
 
 echo "Rebuilding APK ..."
-apktool b SourceApk -o patched-unsigned.apk > logs/apkcomliler.log
+apktool b SourceApk -o patched-unsigned.apk > logs/apkcompile.log
 
 echo "Signing APK ..."
 zipalign -p 4 patched-unsigned.apk patched-unsigned-aligned.apk
