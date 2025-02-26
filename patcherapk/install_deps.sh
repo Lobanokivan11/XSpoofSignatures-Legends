@@ -1,3 +1,4 @@
+rm -rf logs
 mkdir logs
 echo "Updating Apt Sources"
 apt update -y > logs/aptupdate.log
