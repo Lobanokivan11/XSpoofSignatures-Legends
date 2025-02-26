@@ -16,6 +16,15 @@ Please, check AndroidManifest.xml by Apktool To understand for succerful Signatu
 
 ## Usage (Linux)
 
+### Note
+If You Are Do It At First Time, You Need Execute ```bash install_deps.sh```
+To Install Need Depencies
+
+### Before Patching
+After Depencies Installing or Apk Patching You Will see Folder Named ```logs``` it contains Debug Information You May Read If You Can't Patch APK
+
+### Steps
+
 1. Get Any Clean Apk (No Mod, ONLY CLEAN APK), place to patcherapk folder and rename to original.apk
 
 2. Execute ```bash build_patched_apk.sh```
