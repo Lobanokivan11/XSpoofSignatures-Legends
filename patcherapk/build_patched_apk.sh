@@ -6,7 +6,7 @@ if [ ! -f "original.apk" ]; then
 fi
 
 echo "Unpacking Original APK"
-java -jar apktool.jar d -s original.apk -o SourceApk
+apktool d -s original.apk -o SourceApk
 
 echo "Add Spoof Signature Permission"
 xmlstarlet edit --inplace -s "/manifest" -t elem -n uses-permission-temp -v "" -a "/manifest/uses-permission-temp" -t 'attr' -n 'android:name' -v 'android.permission.FAKE_PACKAGE_SIGNATURE' -r "/manifest/uses-permission-temp" -v uses-permission ./SourceApk/AndroidManifest.xml
@@ -19,7 +19,7 @@ echo "Add Signature Using By System"
 xmlstarlet edit --inplace -s "/manifest/application" -t elem -n meta-data-temp -v "" -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:name' -v 'fake-signature-only' -a "/manifest/application/meta-data-temp" -t 'attr' -n 'android:value' -v 'true' -r "/manifest/application/meta-data-temp" -v meta-data ./SourceApk/AndroidManifest.xml
 
 echo "Rebuilding APK ..."
-java -jar apktool.jar b SourceApk -o patched-unsigned.apk
+apktool b SourceApk -o patched-unsigned.apk
 
 echo "Signing APK ..."
 zipalign -p 4 patched-unsigned.apk patched-unsigned-aligned.apk
