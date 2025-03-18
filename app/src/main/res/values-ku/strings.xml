@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="permdesc_fakePackageSignature">Destûr dide ku sepanê bide ku nîşan bide ku nîşanek cûda hebe.Serlêdanên xerab dikarin vê yekê bikaribin vê yekê tawanbar bikin da ku bigihîjin daneyên sepana taybet a serlêdanên din.Bikaranîna rewa ji bo nimûne di bin kontrolên îmzeyên GMS de derbas dibe.Vê bi hişyariyê bidin!</string>
-</resources>
+<string name="module_description">Module ji bo îmzeyên pakêtê Spoof.</string>\
+	<string name="permlab_fakePackageSignature">Nîşana pakêta Spoof</string>
+	</resources>

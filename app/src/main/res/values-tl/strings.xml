@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="permlab_fakePackageSignature">Lagda ng Spoof Package</string>
-	</resources>
+	<string name="module_description">Module sa mga lagda ng pakete ng spoof.</string>\
+	<string name="permdesc_fakePackageSignature">Pinapayagan ang app na magpanggap na magkaroon ng ibang lagda.Ang mga nakakahamak na aplikasyon ay maaaring ma -abuso ito upang ma -access ang pribadong data ng app ng iba pang mga app.Kasama sa mga lehitimong gamit ang halimbawa ng pag -bypass ng mga tseke ng lagda ng GMS.Bigyan ito ng pag -iingat!</string>
+</resources>

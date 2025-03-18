@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="permlab_fakePackageSignature">ब्रेच प्याकेज हस्ताक्षर</string>
-	</resources>
+	<string name="module_description">मोड्युल प्याकेज हस्ताक्षरको हस्ताक्षर गर्न।</string>\
+	<string name="permdesc_fakePackageSignature">अनुप्रयोगलाई फरक हस्ताक्षर भएको बहाना गर्न अनुमति दिन्छ।मालिसियस अनुप्रयोगहरूले अन्य अनुप्रयोगहरूको निजी अनुप्रयोग डाटा पहुँच गर्न यसलाई दुरुपयोग गर्न सक्षम हुन सक्छ।वैध प्रयोगहरूले GMS हस्ताक्षर जाँच गरेर उदाहरणको लागि उदाहरणका लागि समावेश गर्दछ।सावधानीका साथ यसलाई प्रदान गर्नुहोस्!</string>
+</resources>

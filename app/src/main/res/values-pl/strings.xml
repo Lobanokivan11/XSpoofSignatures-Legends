@@ -2,4 +2,5 @@
 <resources>
 <string name="module_description">Moduł do podstępnych podpisów pakietu.</string>\
 	<string name="permdesc_fakePackageSignature">Pozwala aplikacji udawać, że ma inny podpis.Złośliwe aplikacje mogą być w stanie nadużyć w celu uzyskania dostępu do prywatnych danych aplikacji innych aplikacji.Uzasadnione zastosowania obejmują na przykład omijanie kontroli podpisów GMS.Udaj to ostrożnie!</string>
-</resources>
+<string name="permlab_fakePackageSignature">Podpis opakowania podróbki</string>
+	</resources>

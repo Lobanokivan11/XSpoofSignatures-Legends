@@ -2,4 +2,5 @@
 <resources>
 <string name="module_description">Module om pakkethandtekeningen te vervalsen.</string>\
 	<string name="permlab_fakePackageSignature">Spoofpakkethandtekening</string>
-	</resources>
+	<string name="permdesc_fakePackageSignature">Hiermee kan de app doen alsof hij een andere handtekening heeft.Schadelijke applicaties kunnen dit mogelijk misbruiken om toegang te krijgen tot private app -gegevens van andere apps.Legitiem gebruik omvat bijvoorbeeld het omzeilen van GMS -handtekeningcontroles.Geef dit voorzichtig!</string>
+</resources>

@@ -2,4 +2,5 @@
 <resources>
 <string name="module_description">ਪੈਕੇਜ ਦਸਤਖਤਾਂ ਨੂੰ ਤਿਆਰ ਕਰਨ ਲਈ ਮੈਡਿ .ਲ.</string>\
 	<string name="permlab_fakePackageSignature">ਸਪੁਰਮੰਡ ਦੇ ਦਸਤਖਤ</string>
-	</resources>
+	<string name="permdesc_fakePackageSignature">ਐਪ ਨੂੰ ਵੱਖਰੇ ਦਸਤਖਤ ਲੈਣ ਦਾ ਵਿਖਾਵਾ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ.ਖਤਰਨਾਕ ਕਾਰਜਸ ਹੋਰ ਐਪਸ ਦੇ ਪ੍ਰਾਈਵੇਟ ਐਪ ਡੇਟਾ ਨੂੰ ਐਕਸੈਸ ਕਰਨ ਲਈ ਇਸ ਦੀ ਵਰਤੋਂ ਇਸ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇਸ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਨ.ਜਾਇਜ਼ ਉਪਕਰਣਾਂ ਵਿੱਚ ਉਦਾਹਰਣ ਵਜੋਂ ਜੀ ਐੱਸ ਐੱਸ ਐੱਸ ਦਸਤਖਤ ਚੈੱਕਾਂ ਨੂੰ ਬਾਈਪਾਸ ਕਰਨਾ ਸ਼ਾਮਲ ਹੁੰਦਾ ਹੈ.ਇਸ ਨੂੰ ਸਾਵਧਾਨੀ ਨਾਲ ਦਿਓ!</string>
+</resources>

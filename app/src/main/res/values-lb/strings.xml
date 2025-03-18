@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="permdesc_fakePackageSignature">Erlaabt d\'App virzéien fir eng aner Ënnerschrëft ze maachen.Béisaarteg Uwendunge kënnen dëst fäeg sinn dëst ze mëssbrauchen fir Zougang zu private App Daten vun aneren Apps ze kréien.Legitim benotzt mat Beispill fir e Beispill d\'GMS Ënnerschrëftcheckungen ze kréien.Grenzt dëst mat Vorsicht!</string>
-</resources>
+<string name="module_description">Modul fir Spoof Package Ënnerschrëften.</string>\
+	<string name="permlab_fakePackageSignature">Spoof Package Ënnerschrëft</string>
+	</resources>

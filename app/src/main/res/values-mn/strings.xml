@@ -2,4 +2,5 @@
 <resources>
 <string name="module_description">Багцын гарын үсгийг нэмэгдүүлэх модуль.</string>\
 	<string name="permlab_fakePackageSignature">Spoodude багц гарын үсэг</string>
-	</resources>
+	<string name="permdesc_fakePackageSignature">Апп нь өөр гарын үсэг бүхий дүр эсгэх боломжийг олгодог.Хортой програмууд нь үүнийг бусад апп-ын хувийн апп дата руу нэвтрэхийн тулд үүнийг хүчирхийлэх чадвартай байж магадгүй юм.Хууль ёсны хэрэглэгчид GMS гарын үсгийн шалгалтыг давж гарахад зориулагдсан болно.Үүнийг болгоомжтой буцаах!</string>
+</resources>

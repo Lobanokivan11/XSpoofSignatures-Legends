@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="permlab_fakePackageSignature">Llofnod pecyn spoof</string>
-	</resources>
+	<string name="module_description">Modiwl i lofnodion pecyn spoof.</string>\
+	<string name="permdesc_fakePackageSignature">Yn caniatáu i\'r ap esgus bod â llofnod gwahanol.Efallai y bydd cymwysiadau maleisus yn gallu cam -drin hyn i gael mynediad at ddata apiau preifat apiau eraill.Mae defnyddiau cyfreithlon yn cynnwys er enghraifft osgoi gwiriadau llofnod GMS.Caniatâ hyn yn ofalus!</string>
+</resources>

@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="permlab_fakePackageSignature">Υπογραφή πακέτων πακέτων</string>
-	</resources>
+	<string name="module_description">Μονάδα σε υπογραφές πακέτων spoof.</string>\
+	<string name="permdesc_fakePackageSignature">Επιτρέπει στην εφαρμογή να προσποιείται ότι έχει διαφορετική υπογραφή.Οι κακόβουλες εφαρμογές ενδέχεται να είναι σε θέση να καταχραστούν αυτό για να αποκτήσουν πρόσβαση σε ιδιωτικά δεδομένα εφαρμογών άλλων εφαρμογών.Οι νόμιμες χρήσεις περιλαμβάνουν για παράδειγμα την παράκαμψη των ελέγχων υπογραφής GMS.Δώστε αυτό με προσοχή!</string>
+</resources>
