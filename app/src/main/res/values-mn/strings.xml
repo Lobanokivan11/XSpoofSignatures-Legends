@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-</resources>
+<string name="module_description">Багцын гарын үсгийг нэмэгдүүлэх модуль.</string>\
+	<string name="permlab_fakePackageSignature">Spoodude багц гарын үсэг</string>
+	</resources>

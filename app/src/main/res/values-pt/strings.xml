@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Módulo para fazer assinaturas de pacote de fibra.</string>\
+	<string name="permdesc_fakePackageSignature">Permite que o aplicativo finge ter uma assinatura diferente.Aplicativos maliciosos podem abusar isso para acessar dados de aplicativos particulares de outros aplicativos.Os usos legítimos incluem, por exemplo, contornar as verificações de assinatura do GMS.Conceda isso com cautela!</string>
 </resources>

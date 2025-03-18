@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-</resources>
+<string name="module_description">Modal gus sgrùdadh a dhèanamh air ainmean-sgrìobhte pacaid.</string>\
+	<string name="permlab_fakePackageSignature">Ainm-sgrìobhte pacaid spoof</string>
+	</resources>

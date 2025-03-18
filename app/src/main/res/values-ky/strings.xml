@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Топтомдун методулу.</string>\
+	<string name="permlab_fakePackageSignature">Топтомдун колу</string>
+	<string name="permdesc_fakePackageSignature">Колдонмого ар кандай кол коюуга мүмкүнчүлүк берет.Зыяндуу өтүнмөлөр бул жеке колдонмолордун жеке колдонмо маалыматтарын кыянаттык менен пайдалануу мүмкүнчүлүгүн колдонушу мүмкүн.Легимат колдонот мисалы, мисалы, GMS кол тамгасын текшерүү.Эскертүү менен мүрзө!</string>
 </resources>

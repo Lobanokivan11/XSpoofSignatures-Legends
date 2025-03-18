@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul pentru a spoof semnături.</string>\
+	<string name="permlab_fakePackageSignature">Semnătura pachetului de spoof</string>
+	<string name="permdesc_fakePackageSignature">Permite aplicației să se prefacă că are o semnătură diferită.Aplicațiile rău intenționate pot fi capabile să abuzeze de acest lucru pentru a accesa datele private ale aplicațiilor private ale altor aplicații.Utilizările legitime includ, de exemplu, ocolirea verificărilor semnăturii GMS.Acordă acest lucru cu precauție!</string>
 </resources>

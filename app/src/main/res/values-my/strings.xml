@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">အထုပ် signatures spooof ဖို့ module ။</string>\
+	<string name="permlab_fakePackageSignature">Spoof အထုပ်လက်မှတ်လက်မှတ်</string>
+	<string name="permdesc_fakePackageSignature">ဒီ app ကိုမတူညီတဲ့လက်မှတ်တစ်ခုရှိဖို့ဟန်ဆောင်ဖို့ခွင့်ပြုပါတယ်။အန္တရာယ်ရှိသော application များသည်အခြားအက်ပ်များ၏ပုဂ္ဂလိကအက်ပလီကေးရှင်းအချက်အလက်များကိုရယူရန်၎င်းကိုအလွဲသုံးစားပြုနိုင်သည်။တရားဝင်အသုံးပြုမှုသည် GMS လက်မှတ်စစ်ဆေးမှုများကိုကျော်လွှားနိုင်သည်။ဒီသတိနှင့်အတူပေး!</string>
 </resources>

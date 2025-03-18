@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">بوغچا ئىمراچىسنى قوشۇش.</string>\
+	<string name="permlab_fakePackageSignature">قوشنا بوغچا ئىمزاسى</string>
+	<string name="permdesc_fakePackageSignature">ئەپنىڭ باشقا ئىمزا قويغانلىقىدىن پايدىغا ئىگە.يامان غەرەزلىك قوللىنىشچان پروگراممىلار بۇنى باشقا دېتاللارنىڭ شەخسىي ئەپ سانلىق مەلۇماتلىرىنى زىيارەت قىلىشى مۇمكىن.قانۇنلۇق ئىشلىتىش پەقەت GMS نىڭ ئىمزاسى چەكلىرىنى ئايلىنىپ ئۆتۈشنى ئۆز ئىچىگە ئالىدۇ.بۇنى ئېھتىيات قىلىڭ!</string>
 </resources>

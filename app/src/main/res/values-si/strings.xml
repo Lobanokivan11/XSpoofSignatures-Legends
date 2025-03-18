@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">ඇසුරුම් පැකේජ අත්සන් කිරීම සඳහා මොඩියුලය.</string>\
+	<string name="permlab_fakePackageSignature">ස්පූෆ් පැකේජ අත්සන</string>
+	<string name="permdesc_fakePackageSignature">වෙනස් අත්සනක් ඇති බව මවා පෑමට යෙදුමට ඉඩ දෙන්න.අනිෂ්ට යෙදුම් වෙනත් යෙදුම්වල පුද්ගලික යෙදුම් දත්ත වෙත ප්රවේශ වීමට මෙය අනිසි ලෙස භාවිතා කළ හැකිය.උදාහරණයක් ලෙස ජීඑම්එස් අත්සන චෙක්පත් මග හැරීම සඳහා නීත්යානුකූල භාවිතයන් ඇතුළත් වේ.මෙය ප්රවේශමෙන් ලබා දෙන්න!</string>
 </resources>

@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="permlab_fakePackageSignature">ପ୍ୟାକେଜ୍ ଦସ୍ତଖତ |</string>
+	<string name="permdesc_fakePackageSignature">ଆପର ବିଭିନ୍ନ ଦସ୍ତଖତ କରିବାକୁ ଛଳନା କରିବାକୁ ଅନୁମତି ଦିଏ |ଦୁଷ୍ଟ ପ୍ରୟୋଗଗୁଡ଼ିକ ଅନ୍ୟ ଆପ୍ସର ବ୍ୟକ୍ତିଗତ ଆପ୍ ତଥ୍ୟ ପ୍ରବେଶ କରିବାକୁ ସକ୍ଷମ ହୋଇପାରେ |GMS ଦସ୍ତଖତ ଯାଞ୍ଚକୁ ବାଇପାସ୍ କରିବା ପାଇଁ ଆଇନଗତ ବ୍ୟବହାର ଅନ୍ତର୍ଭୁକ୍ତ କରେ |ସତର୍କତାର ସହିତ ଏହାକୁ ପ୍ରଦାନ କରନ୍ତୁ!</string>
 </resources>

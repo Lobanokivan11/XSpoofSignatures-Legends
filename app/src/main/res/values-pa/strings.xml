@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-</resources>
+<string name="module_description">ਪੈਕੇਜ ਦਸਤਖਤਾਂ ਨੂੰ ਤਿਆਰ ਕਰਨ ਲਈ ਮੈਡਿ .ਲ.</string>\
+	<string name="permlab_fakePackageSignature">ਸਪੁਰਮੰਡ ਦੇ ਦਸਤਖਤ</string>
+	</resources>
