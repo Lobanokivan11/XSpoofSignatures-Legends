@@ -2,4 +2,5 @@
 <resources>
 <string name="module_description">Modal gus sgrùdadh a dhèanamh air ainmean-sgrìobhte pacaid.</string>\
 	<string name="permlab_fakePackageSignature">Ainm-sgrìobhte pacaid spoof</string>
-	</resources>
+	<string name="permdesc_fakePackageSignature">A \'leigeil leis an aplacaid leigeil orra ainm-sgrìobhte eadar-dhealaichte a bhith aca.Is dòcha gum bi e comasach dha tagraidhean droch-rùnach a bhith comasach air seo faighinn gu dàta aplacaid prìobhaideach de aplacaidean eile.Tha cleachdaidhean dligheach a \'toirt a-steach mar eisimpleir b\' e seo sgrùdaidhean ainm-sgrìobhte GMS.Thoir seachad seo le rabhadh!</string>
+</resources>

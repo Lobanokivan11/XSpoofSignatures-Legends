@@ -2,4 +2,5 @@
 <resources>
 <string name="module_description">Modulio į apgaulingo paketo parašus.</string>\
 	<string name="permdesc_fakePackageSignature">Leidžia programai apsimesti, kad turi kitokį parašą.Kenkėjiškos programos gali tai piktnaudžiauti, kad pasiektų kitų programų privačių programų duomenis.Teisėti naudojimo būdai apima, pavyzdžiui, apeinant GMS parašo patikrinimus.Suteik tai atsargiai!</string>
-</resources>
+<string name="permlab_fakePackageSignature">„Spoof" paketo parašas</string>
+	</resources>

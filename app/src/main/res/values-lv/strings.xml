@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="module_description">Modulis uz paketes parakstiem.</string>\
-	</resources>
+	<string name="permlab_fakePackageSignature">Krāpšanās paketes paraksts</string>
+	<string name="permdesc_fakePackageSignature">Ļauj lietotnei izlikties, ka tai ir atšķirīgs paraksts.Ļaunprātīgas lietojumprogrammas, iespējams, varēs to ļaunprātīgi izmantot, lai piekļūtu citu lietotņu privātām lietotņu datiem.Likumīgi lietojumi ietver, piemēram, apiet GMS parakstu pārbaudes.Piešķiriet to piesardzīgi!</string>
+</resources>

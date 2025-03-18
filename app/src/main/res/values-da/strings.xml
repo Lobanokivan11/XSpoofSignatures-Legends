@@ -1,4 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
 <string name="module_description">Modul til forfalskning af pakkens underskrifter.</string>\
-	</resources>
+	<string name="permlab_fakePackageSignature">Spoof pakketesignatur</string>
+	<string name="permdesc_fakePackageSignature">Tillader appen at foregive at have en anden signatur.Ondsindede applikationer kan muligvis misbruge dette for at få adgang til private appdata fra andre apps.Legitime anvendelser inkluderer for eksempel omgåelse af GMS -signaturkontroller.Giv dette med forsigtighed!</string>
+</resources>

@@ -2,4 +2,5 @@
 <resources>
 <string name="module_description">Moduuli pakkaamaan pakettien allekirjoitukset.</string>\
 	<string name="permlab_fakePackageSignature">Huijauspaketin allekirjoitus</string>
-	</resources>
+	<string name="permdesc_fakePackageSignature">Antaa sovelluksen teeskennellä olevan erilainen allekirjoitus.Haitalliset sovellukset saattavat käyttää tätä väärinkäyttämään muiden sovellusten yksityisiä sovellustietoja.Laittomiin käyttötarkoituksiin sisältyy esimerkiksi GMS -allekirjoitustarkastusten ohittaminen.Antakaa tämä varovaisesti!</string>
+</resources>
