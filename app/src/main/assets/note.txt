@@ -1,0 +1,6 @@
+FOLDER "patcherapk" INSIDE "assets" folder of apk May be Used To Patch Third-Party APK For Spoof Signature Permission.
+To Use it, Unpack This Folder From APK Thing 2 ways:
+1. Install APKTOOL using "sudo apt install apktool" and decompile APK "apktool d base.apk" *
+2. Unpack "patcherapk" Folder From APK using 7-zip
+* = NOTE: where base.apk is APK of XspoofSignatures-Legends Module
+

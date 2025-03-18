@@ -20,8 +20,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
-        
-
+    - name: Cache Gradle
+      uses: burrunan/gradle-cache-action@v2
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
     - name: Build with Gradle
@@ -36,13 +36,5 @@ jobs:
         name: Debug Builds
         files: |
            app/build/outputs/apk/debug/app-debug.apk
-    - uses: actions/cache@v4
-      with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-
 
 
