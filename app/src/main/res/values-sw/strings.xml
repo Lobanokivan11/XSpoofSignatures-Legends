@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Moduli kwa saini za kifurushi za Spoof.</string>\
+	<string name="permlab_fakePackageSignature">Saini ya kifurushi cha Spoof</string>
+	<string name="permdesc_fakePackageSignature">Inaruhusu programu kujifanya kuwa na saini tofauti.Maombi mabaya yanaweza kuwa na uwezo wa kutumia vibaya hii kupata data ya programu ya kibinafsi ya programu zingine.Matumizi halali ni pamoja na kwa mfano kupitisha ukaguzi wa saini ya GMS.Toa hii kwa tahadhari!</string>
 </resources>

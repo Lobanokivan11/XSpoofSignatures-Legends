@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">தொகுப்பு கையொப்பங்களை ஏமாற்றுவதற்கான தொகுதி.</string>\
+	<string name="permlab_fakePackageSignature">ஸ்பூஃப் தொகுப்பு கையொப்பம்</string>
+	<string name="permdesc_fakePackageSignature">பயன்பாட்டை வேறுபட்ட கையொப்பம் இருப்பதாக நடிக்க அனுமதிக்கிறது.தீங்கிழைக்கும் பயன்பாடுகள் பிற பயன்பாடுகளின் தனிப்பட்ட பயன்பாட்டு தரவை அணுக இதை துஷ்பிரயோகம் செய்ய முடியும்.முறையான பயன்பாடுகளில் GMS கையொப்ப சோதனைகளைத் தவிர்ப்பது அடங்கும்.இதை எச்சரிக்கையுடன் வழங்குங்கள்!</string>
 </resources>

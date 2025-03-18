@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-</resources>
+<string name="module_description">पॅकेज स्वाक्षर्‍या तयार करण्यासाठी मॉड्यूल.</string>\
+	<string name="permlab_fakePackageSignature">स्पूफ पॅकेज स्वाक्षरी</string>
+	</resources>

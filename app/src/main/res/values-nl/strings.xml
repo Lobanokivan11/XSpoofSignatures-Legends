@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-</resources>
+<string name="module_description">Module om pakkethandtekeningen te vervalsen.</string>\
+	<string name="permlab_fakePackageSignature">Spoofpakkethandtekening</string>
+	</resources>

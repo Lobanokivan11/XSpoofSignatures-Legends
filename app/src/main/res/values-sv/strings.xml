@@ -1,2 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul för att förfalska paketets signaturer.</string>\
+	<string name="permdesc_fakePackageSignature">Tillåter appen att låtsas ha en annan signatur.Skadliga applikationer kanske kan missbruka detta för att få åtkomst till privata appdata för andra appar.Legitima användningsområden inkluderar till exempel att förbigå GMS -signaturkontroller.Ge detta med försiktighet!</string>
 </resources>

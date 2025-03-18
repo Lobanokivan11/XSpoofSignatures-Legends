@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">โมดูลเพื่อปลอมลายเซ็นแพ็คเกจ</string>\
+	<string name="permlab_fakePackageSignature">ลายเซ็นแพ็คเกจปลอม</string>
+	<string name="permdesc_fakePackageSignature">อนุญาตให้แอพแกล้งทำเป็นลายเซ็นที่แตกต่างกันแอปพลิเคชันที่เป็นอันตรายอาจสามารถใช้สิ่งนี้ในทางที่ผิดเพื่อเข้าถึงข้อมูลแอพส่วนตัวของแอพอื่น ๆการใช้งานที่ถูกต้องตามกฎหมายรวมถึงตัวอย่างการตรวจสอบลายเซ็น GMSให้สิ่งนี้ด้วยความระมัดระวัง!</string>
 </resources>

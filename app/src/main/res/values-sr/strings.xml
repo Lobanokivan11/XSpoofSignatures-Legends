@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Модул за спооп потписа пакета.</string>\
+	<string name="permlab_fakePackageSignature">Потпис споофона пакета</string>
+	<string name="permdesc_fakePackageSignature">Омогућава апликацији да се претвара да има другачији потпис.Злонамјерне апликације могу моћи да злоупотребе ово да приступе приватним подацима о апликацијама других апликација.Легитимне употребе укључују, на пример заобилазећи Цхецк Спилл Цхецк.Дај ово опрезно!</string>
 </resources>

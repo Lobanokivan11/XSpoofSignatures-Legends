@@ -1,2 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
+<string name="module_description">Modul za podpise paketov.</string>\
+	<string name="permlab_fakePackageSignature">Podpis za paket</string>
+	<string name="permdesc_fakePackageSignature">Omogoča, da se aplikacija pretvarja, da ima drugačen podpis.Zlonamerne aplikacije bodo morda lahko zlorabile za dostop do podatkov zasebnih aplikacij drugih aplikacij.Legitimne uporabe vključujejo na primer zaobiti preglede GMS podpisov.To podelite previdno!</string>
 </resources>
