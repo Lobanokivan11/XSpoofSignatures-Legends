@@ -8,9 +8,9 @@ android {
 
 	defaultConfig {
 		applicationId = "dev.materii.rushii.xspoofsignatures"
-		minSdk = 29
-		versionCode = 4
-		versionName = "2.1.0"
+		minSdk = 3
+		versionCode = 5
+		versionName = "2.5.0"
 	}
 
 	buildTypes {
@@ -29,15 +29,6 @@ android {
 			}
 		}
 	}
-
-	compileOptions {
-		sourceCompatibility = JavaVersion.VERSION_17
-		targetCompatibility = JavaVersion.VERSION_17
-	}
-}
-
-tasks.withType<JavaCompile> {
-	options.compilerArgs.add("-Xlint:-deprecation")
 }
 
 dependencies {
