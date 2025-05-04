@@ -24,12 +24,16 @@ jobs:
       uses: burrunan/gradle-cache-action@v2
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
+    - name: Update
+      run: sudo apt update
+    - name: Upgrade
+      run: sudo apt upgrade -y
     - name: Build with Gradle
-      run: ./gradlew build
+      run: gradle build
     - name: Build Debug APK
-      run: ./gradlew assembleDebug
+      run: gradle assembleDebug
     - name: Build Release APK
-      run: ./gradlew assembleRelease
+      run: gradle assembleRelease
     - name: Nightly build
       uses: softprops/action-gh-release@v1
       with:
