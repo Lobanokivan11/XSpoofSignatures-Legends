@@ -6,6 +6,21 @@ android {
 	namespace = "dev.materii.rushii.xspoofsignatures"
 	compileSdk = 35
 
+        signingConfigs {
+    	    create("release") {
+        	    storeFile = file("../sign.keystore")
+        	    storePassword = "369852"
+        	    keyAlias = "lob"
+        	    keyPassword = "369852"
+    	    }
+            create("debug") {
+                    storeFile = file("../sign.keystore")
+                    storePassword = "369852"
+                    keyAlias = "lob"
+                    keyPassword = "369852"
+            }
+        }
+
 	defaultConfig {
 		applicationId = "dev.materii.rushii.xspoofsignatures"
 		minSdk = 3
