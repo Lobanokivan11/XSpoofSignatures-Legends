@@ -1,5 +1,6 @@
-rm -rf logs
-mkdir logs
+if [ ! -f "logs" ]; then
+    mkdir logs
+fi
 echo "Updating Apt Sources"
 apt update -y > logs/aptupdate.log
 echo "Updating Apt Packages"
