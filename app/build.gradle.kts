@@ -13,12 +13,6 @@ android {
         	    keyAlias = "lob"
         	    keyPassword = "369852"
     	    }
-            create("debug") {
-                    storeFile = file("../sign.keystore")
-                    storePassword = "369852"
-                    keyAlias = "lob"
-                    keyPassword = "369852"
-            }
         }
 
 	defaultConfig {
@@ -36,12 +30,7 @@ android {
 				getDefaultProguardFile("proguard-android-optimize.txt"),
 				"proguard-rules.pro",
 			)
-
-			if (System.getenv("RELEASE") == "true") {
-				signingConfig = signingConfigs.getByName("release")
-			} else {
-				signingConfig = signingConfigs.getByName("debug")
-			}
+			signingConfig = signingConfigs.getByName("release")
 		}
 	}
 }

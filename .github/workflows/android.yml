@@ -25,11 +25,11 @@ jobs:
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
     - name: Build with Gradle
-      run: gradle build
+      run: ./gradlew build
     - name: Build Debug APK
-      run: gradle assembleDebug
+      run: ./gradlew assembleDebug
     - name: Build Release APK
-      run: gradle assembleRelease
+      run: ./gradlew assembleRelease
     - name: Nightly build
       uses: softprops/action-gh-release@v1
       with:
