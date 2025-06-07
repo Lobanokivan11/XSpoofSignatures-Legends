@@ -20,8 +20,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
-    - name: Cache Gradle
-      uses: burrunan/gradle-cache-action@v2
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
     - name: Update
