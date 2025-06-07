@@ -22,10 +22,6 @@ jobs:
         cache: gradle
     - name: CHMOD GRADLEW
       run: chmod 777 ./gradlew
-    - name: Update
-      run: sudo apt update
-    - name: Upgrade
-      run: sudo apt upgrade -y
     - name: Build with Gradle
       run: gradle build
     - name: Build Debug APK
