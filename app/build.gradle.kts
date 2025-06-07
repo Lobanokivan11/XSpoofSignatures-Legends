@@ -4,7 +4,7 @@ plugins {
 
 android {
 	namespace = "dev.materii.rushii.xspoofsignatures"
-	compileSdk = 35
+	compileSdk = 34
 
         signingConfigs {
     	    create("release") {
@@ -12,12 +12,17 @@ android {
         	    storePassword = "369852"
         	    keyAlias = "lob"
         	    keyPassword = "369852"
+				enableV1Signing = true
+				enableV2Signing = true
+				enableV3Signing = true
+				enableV4Signing = true
     	    }
         }
 
 	defaultConfig {
 		applicationId = "dev.materii.rushii.xspoofsignatures"
 		minSdk = 3
+		targetSdk = 35
 		versionCode = 5
 		versionName = "2.5.0"
 	}
